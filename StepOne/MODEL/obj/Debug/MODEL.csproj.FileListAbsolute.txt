@@ -1,0 +1,10 @@
+H:\Github_Working\StepOne\StepOne\MODEL\bin\Debug\MODEL.dll.config
+H:\Github_Working\StepOne\StepOne\MODEL\bin\Debug\MODEL.dll
+H:\Github_Working\StepOne\StepOne\MODEL\bin\Debug\MODEL.pdb
+H:\Github_Working\StepOne\StepOne\MODEL\bin\Debug\EntityFramework.dll
+H:\Github_Working\StepOne\StepOne\MODEL\bin\Debug\EntityFramework.xml
+H:\Github_Working\StepOne\StepOne\MODEL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+H:\Github_Working\StepOne\StepOne\MODEL\obj\Debug\MODEL.dll
+H:\Github_Working\StepOne\StepOne\MODEL\obj\Debug\MODEL.pdb
+H:\Github_Working\StepOne\StepOne\Step\Bin\MODEL.dll
+H:\Github_Working\StepOne\StepOne\Step\Bin\MODEL.pdb

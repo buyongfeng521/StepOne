@@ -1,0 +1,14 @@
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\Step.Logic.dll
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\Step.Logic.pdb
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\DI.dll
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\IBLL.dll
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\MODEL.dll
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\EntityFramework.dll
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\DI.pdb
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\IBLL.pdb
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\MODEL.pdb
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\EntityFramework.xml
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\zh-Hans\EntityFramework.resources.dll
+H:\Github_Working\StepOne\StepOne\Step.Logic\obj\Debug\Step.Logic.csprojResolveAssemblyReference.cache
+H:\Github_Working\StepOne\StepOne\Step.Logic\obj\Debug\Step.Logic.dll
+H:\Github_Working\StepOne\StepOne\Step.Logic\obj\Debug\Step.Logic.pdb

@@ -1,0 +1,14 @@
+H:\Github_Working\StepOne\StepOne\DALMSSQL\bin\Debug\DALMSSQL.dll
+H:\Github_Working\StepOne\StepOne\DALMSSQL\bin\Debug\DALMSSQL.pdb
+H:\Github_Working\StepOne\StepOne\DALMSSQL\bin\Debug\IDAL.dll
+H:\Github_Working\StepOne\StepOne\DALMSSQL\bin\Debug\MODEL.dll
+H:\Github_Working\StepOne\StepOne\DALMSSQL\bin\Debug\EntityFramework.dll
+H:\Github_Working\StepOne\StepOne\DALMSSQL\bin\Debug\IDAL.pdb
+H:\Github_Working\StepOne\StepOne\DALMSSQL\bin\Debug\MODEL.pdb
+H:\Github_Working\StepOne\StepOne\DALMSSQL\bin\Debug\EntityFramework.xml
+H:\Github_Working\StepOne\StepOne\DALMSSQL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+H:\Github_Working\StepOne\StepOne\DALMSSQL\obj\Debug\DALMSSQL.csprojResolveAssemblyReference.cache
+H:\Github_Working\StepOne\StepOne\DALMSSQL\obj\Debug\DALMSSQL.dll
+H:\Github_Working\StepOne\StepOne\DALMSSQL\obj\Debug\DALMSSQL.pdb
+H:\Github_Working\StepOne\StepOne\Step\Bin\DALMSSQL.dll
+H:\Github_Working\StepOne\StepOne\Step\Bin\DALMSSQL.pdb

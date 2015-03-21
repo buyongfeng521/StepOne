@@ -1,0 +1,12 @@
+H:\Github_Working\StepOne\StepOne\IDAL\bin\Debug\IDAL.dll
+H:\Github_Working\StepOne\StepOne\IDAL\bin\Debug\IDAL.pdb
+H:\Github_Working\StepOne\StepOne\IDAL\bin\Debug\MODEL.dll
+H:\Github_Working\StepOne\StepOne\IDAL\bin\Debug\EntityFramework.dll
+H:\Github_Working\StepOne\StepOne\IDAL\bin\Debug\MODEL.pdb
+H:\Github_Working\StepOne\StepOne\IDAL\bin\Debug\EntityFramework.xml
+H:\Github_Working\StepOne\StepOne\IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+H:\Github_Working\StepOne\StepOne\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+H:\Github_Working\StepOne\StepOne\IDAL\obj\Debug\IDAL.dll
+H:\Github_Working\StepOne\StepOne\IDAL\obj\Debug\IDAL.pdb
+H:\Github_Working\StepOne\StepOne\Step\Bin\IDAL.dll
+H:\Github_Working\StepOne\StepOne\Step\Bin\IDAL.pdb

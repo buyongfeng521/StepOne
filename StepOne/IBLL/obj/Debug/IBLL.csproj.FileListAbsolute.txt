@@ -1,0 +1,12 @@
+H:\Github_Working\StepOne\StepOne\IBLL\bin\Debug\IBLL.dll
+H:\Github_Working\StepOne\StepOne\IBLL\bin\Debug\IBLL.pdb
+H:\Github_Working\StepOne\StepOne\IBLL\bin\Debug\MODEL.dll
+H:\Github_Working\StepOne\StepOne\IBLL\bin\Debug\EntityFramework.dll
+H:\Github_Working\StepOne\StepOne\IBLL\bin\Debug\MODEL.pdb
+H:\Github_Working\StepOne\StepOne\IBLL\bin\Debug\EntityFramework.xml
+H:\Github_Working\StepOne\StepOne\IBLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+H:\Github_Working\StepOne\StepOne\IBLL\obj\Debug\IBLL.csprojResolveAssemblyReference.cache
+H:\Github_Working\StepOne\StepOne\IBLL\obj\Debug\IBLL.dll
+H:\Github_Working\StepOne\StepOne\IBLL\obj\Debug\IBLL.pdb
+H:\Github_Working\StepOne\StepOne\Step\Bin\IBLL.dll
+H:\Github_Working\StepOne\StepOne\Step\Bin\IBLL.pdb
