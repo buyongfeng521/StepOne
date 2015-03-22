@@ -37,3 +37,13 @@ H:\Github_Working\StepOne\StepOne\Step\bin\zh-Hans\System.Web.WebPages.Razor.res
 H:\Github_Working\StepOne\StepOne\Step\obj\Debug\Step.csprojResolveAssemblyReference.cache
 H:\Github_Working\StepOne\StepOne\Step\obj\Debug\Step.dll
 H:\Github_Working\StepOne\StepOne\Step\obj\Debug\Step.pdb
+H:\Github_Working\StepOne\StepOne\Step\bin\DI.dll
+H:\Github_Working\StepOne\StepOne\Step\bin\Spring.Core.dll
+H:\Github_Working\StepOne\StepOne\Step\bin\Common.Logging.dll
+H:\Github_Working\StepOne\StepOne\Step\bin\DI.pdb
+H:\Github_Working\StepOne\StepOne\Step\bin\IBLL.dll
+H:\Github_Working\StepOne\StepOne\Step\bin\IBLL.pdb
+H:\Github_Working\StepOne\StepOne\Step\bin\EntityFramework.dll
+H:\Github_Working\StepOne\StepOne\Step\bin\MODEL.pdb
+H:\Github_Working\StepOne\StepOne\Step\bin\EntityFramework.xml
+H:\Github_Working\StepOne\StepOne\Step\bin\zh-Hans\EntityFramework.resources.dll

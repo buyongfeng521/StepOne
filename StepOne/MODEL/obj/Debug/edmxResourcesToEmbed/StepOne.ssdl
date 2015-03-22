@@ -1,4 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="StepOneModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityContainer Name="StepOneModelStoreContainer" />
+<Schema Namespace="StepOneModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Sys_User">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UName" Type="nvarchar" MaxLength="50" />
+    <Property Name="UPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="URealName" Type="nvarchar" MaxLength="50" />
+    <Property Name="UEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="UTel" Type="nvarchar" MaxLength="20" />
+    <Property Name="Note" Type="nvarchar" MaxLength="256" />
+    <Property Name="IsDel" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ModifyDate" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="StepOneModelStoreContainer">
+    <EntitySet Name="Sys_User" EntityType="Self.Sys_User" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
 </Schema>

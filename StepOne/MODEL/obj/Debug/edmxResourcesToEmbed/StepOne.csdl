@@ -1,4 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="StepOneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityContainer Name="StepOneEntities" annotation:LazyLoadingEnabled="true" />
+  <EntityContainer Name="StepOneEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Sys_User" EntityType="StepOneModel.Sys_User" />
+  </EntityContainer>
+  <EntityType Name="Sys_User">
+    <Key>
+      <PropertyRef Name="UID" />
+    </Key>
+    <Property Name="UID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="URealName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UTel" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="IsDel" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+  </EntityType>
 </Schema>

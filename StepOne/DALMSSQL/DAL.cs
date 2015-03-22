@@ -5,4 +5,7 @@ using System.Text;
 
 namespace DALMSSQL
 {
+	public partial class Sys_UserDAL : BaseDAL<MODEL.Sys_User>,IDAL.ISys_UserDAL
+    {
+    }
 }

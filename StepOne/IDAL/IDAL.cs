@@ -8,5 +8,9 @@ using System.Text;
 
 namespace IDAL
 {
+	public partial interface ISys_UserDAL : IBaseDAL<MODEL.Sys_User>
+    {
+    }
+
 
 }

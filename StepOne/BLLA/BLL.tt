@@ -31,7 +31,7 @@ foreach (EntityType entity in ItemCollection.GetItems<EntityType>().OrderBy(e =>
     //BeginNamespace(namespaceName, code);
     
 #>
-	public partial class <#=entity.Name#> : BaseBLL<MODEL.<#=entity.Name#>>,IBLL.I<#=entity.Name#>BLL
+	public partial class <#=entity.Name#>BLL : BaseBLL<MODEL.<#=entity.Name#>>,IBLL.I<#=entity.Name#>BLL
     {
 		public override void SetDAL()
 		{

@@ -29,6 +29,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI", "DI\DI.csproj", "{FE8E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{B71D3435-EA79-4306-88B7-F1557ED9177E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00Schemal", "00Schemal", "{3277B316-EA5F-41D6-9D0E-685BA86F1479}"
+	ProjectSection(SolutionItems) = preProject
+		libs\spring-objects-1.3.xsd = libs\spring-objects-1.3.xsd
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

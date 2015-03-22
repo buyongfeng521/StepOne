@@ -8,6 +8,7 @@ namespace IDAL
 {
 	public partial interface IDBSession
     {
+		ISys_UserDAL ISys_UserDAL{get;set;}
     }
 
 }

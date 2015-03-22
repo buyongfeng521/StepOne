@@ -1,4 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="StepOneModelStoreContainer" CdmEntityContainer="StepOneEntities" />
+  <EntityContainerMapping StorageEntityContainer="StepOneModelStoreContainer" CdmEntityContainer="StepOneEntities">
+    <EntitySetMapping Name="Sys_User">
+      <EntityTypeMapping TypeName="StepOneModel.Sys_User">
+        <MappingFragment StoreEntitySet="Sys_User">
+          <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsDel" ColumnName="IsDel" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="UTel" ColumnName="UTel" />
+          <ScalarProperty Name="UEmail" ColumnName="UEmail" />
+          <ScalarProperty Name="URealName" ColumnName="URealName" />
+          <ScalarProperty Name="UPassword" ColumnName="UPassword" />
+          <ScalarProperty Name="UName" ColumnName="UName" />
+          <ScalarProperty Name="UID" ColumnName="UID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
 </Mapping>

@@ -62,6 +62,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StepOne.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Sys_User.cs">
+      <DependentUpon>StepOne.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTOModel\" />
@@ -74,6 +77,7 @@
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <None Include="packages.config" />
     <None Include="StepOne.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

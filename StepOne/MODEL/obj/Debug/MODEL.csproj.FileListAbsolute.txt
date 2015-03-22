@@ -8,3 +8,4 @@ H:\Github_Working\StepOne\StepOne\MODEL\obj\Debug\MODEL.dll
 H:\Github_Working\StepOne\StepOne\MODEL\obj\Debug\MODEL.pdb
 H:\Github_Working\StepOne\StepOne\Step\Bin\MODEL.dll
 H:\Github_Working\StepOne\StepOne\Step\Bin\MODEL.pdb
+H:\Github_Working\StepOne\StepOne\Step\Bin\MODEL.dll.config

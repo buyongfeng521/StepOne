@@ -25,5 +25,6 @@ namespace MODEL
             throw new UnintentionalCodeFirstException();
         }
     
+        public DbSet<Sys_User> Sys_User { get; set; }
     }
 }
