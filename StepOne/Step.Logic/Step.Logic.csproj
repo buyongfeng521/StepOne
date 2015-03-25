@@ -59,6 +59,10 @@
       <Project>{7c48fffc-18eb-4f04-8f50-351fdf856bf5}</Project>
       <Name>MODEL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Step.Helper\Step.Helper.csproj">
+      <Project>{76cee59a-6899-43e4-89d6-c40ba8619e4a}</Project>
+      <Name>Step.Helper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

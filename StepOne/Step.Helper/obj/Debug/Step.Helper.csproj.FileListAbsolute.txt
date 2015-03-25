@@ -1,0 +1,16 @@
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\Step.Helper.dll
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\Step.Helper.pdb
+H:\Github_Working\StepOne\StepOne\Step.Helper\obj\Debug\Step.Helper.csprojResolveAssemblyReference.cache
+H:\Github_Working\StepOne\StepOne\Step.Helper\obj\Debug\Step.Helper.dll
+H:\Github_Working\StepOne\StepOne\Step.Helper\obj\Debug\Step.Helper.pdb
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\DI.dll
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\IBLL.dll
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\MODEL.dll
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\Spring.Core.dll
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\EntityFramework.dll
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\Common.Logging.dll
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\DI.pdb
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\IBLL.pdb
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\MODEL.pdb
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\EntityFramework.xml
+H:\Github_Working\StepOne\StepOne\Step.Helper\bin\Debug\zh-Hans\EntityFramework.resources.dll

@@ -14,3 +14,5 @@ H:\Github_Working\StepOne\StepOne\Step.Logic\obj\Debug\Step.Logic.dll
 H:\Github_Working\StepOne\StepOne\Step.Logic\obj\Debug\Step.Logic.pdb
 H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\Spring.Core.dll
 H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\Common.Logging.dll
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\Step.Helper.dll
+H:\Github_Working\StepOne\StepOne\Step.Logic\bin\Debug\Step.Helper.pdb

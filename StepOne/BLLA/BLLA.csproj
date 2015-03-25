@@ -45,6 +45,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BLL.tt</DependentUpon>
     </Compile>
+    <Compile Include="BLLSession.cs" />
+    <Compile Include="BLLSessionExtension.cs">
+      <DependentUpon>BLLSessionExtension.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +82,10 @@
     <None Include="BLL.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>BLL.cs</LastGenOutput>
+    </None>
+    <None Include="BLLSessionExtension.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BLLSessionExtension.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

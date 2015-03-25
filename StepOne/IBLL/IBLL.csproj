@@ -45,6 +45,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>IBLL.tt</DependentUpon>
     </Compile>
+    <Compile Include="IBLLSession.cs" />
+    <Compile Include="IBLLSessionExtension.cs">
+      <DependentUpon>IBLLSessionExtension.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +66,10 @@
     <None Include="IBLL.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>IBLL.cs</LastGenOutput>
+    </None>
+    <None Include="IBLLSessionExtension.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IBLLSessionExtension.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

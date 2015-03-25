@@ -4,3 +4,4 @@ H:\Github_Working\StepOne\StepOne\DI\obj\Debug\DI.dll
 H:\Github_Working\StepOne\StepOne\DI\obj\Debug\DI.pdb
 H:\Github_Working\StepOne\StepOne\Step\Bin\DI.dll
 H:\Github_Working\StepOne\StepOne\Step\Bin\DI.pdb
+H:\Github_Working\StepOne\StepOne\DI\obj\Debug\DI.csprojResolveAssemblyReference.cache

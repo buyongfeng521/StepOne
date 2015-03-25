@@ -47,3 +47,5 @@ H:\Github_Working\StepOne\StepOne\Step\bin\EntityFramework.dll
 H:\Github_Working\StepOne\StepOne\Step\bin\MODEL.pdb
 H:\Github_Working\StepOne\StepOne\Step\bin\EntityFramework.xml
 H:\Github_Working\StepOne\StepOne\Step\bin\zh-Hans\EntityFramework.resources.dll
+H:\Github_Working\StepOne\StepOne\Step\bin\Step.Helper.dll
+H:\Github_Working\StepOne\StepOne\Step\bin\Step.Helper.pdb
