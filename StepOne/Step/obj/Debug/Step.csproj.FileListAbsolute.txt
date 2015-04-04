@@ -43,9 +43,7 @@ H:\Github_Working\StepOne\StepOne\Step\bin\Common.Logging.dll
 H:\Github_Working\StepOne\StepOne\Step\bin\DI.pdb
 H:\Github_Working\StepOne\StepOne\Step\bin\IBLL.dll
 H:\Github_Working\StepOne\StepOne\Step\bin\IBLL.pdb
-H:\Github_Working\StepOne\StepOne\Step\bin\EntityFramework.dll
-H:\Github_Working\StepOne\StepOne\Step\bin\MODEL.pdb
-H:\Github_Working\StepOne\StepOne\Step\bin\EntityFramework.xml
-H:\Github_Working\StepOne\StepOne\Step\bin\zh-Hans\EntityFramework.resources.dll
 H:\Github_Working\StepOne\StepOne\Step\bin\Step.Helper.dll
 H:\Github_Working\StepOne\StepOne\Step\bin\Step.Helper.pdb
+H:\Github_Working\StepOne\StepOne\Step\bin\Step.Logic.Admin.dll
+H:\Github_Working\StepOne\StepOne\Step\bin\Step.Logic.Admin.pdb

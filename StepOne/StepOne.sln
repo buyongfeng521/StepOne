@@ -36,6 +36,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00Schemal", "00Schemal", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step.Helper", "Step.Helper\Step.Helper.csproj", "{76CEE59A-6899-43E4-89D6-C40BA8619E4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Step.Logic.Admin", "Step.Logic.Admin\Step.Logic.Admin.csproj", "{2F640260-105D-4312-9573-42588CBBC681}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +84,10 @@ Global
 		{76CEE59A-6899-43E4-89D6-C40BA8619E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76CEE59A-6899-43E4-89D6-C40BA8619E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76CEE59A-6899-43E4-89D6-C40BA8619E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F640260-105D-4312-9573-42588CBBC681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F640260-105D-4312-9573-42588CBBC681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F640260-105D-4312-9573-42588CBBC681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F640260-105D-4312-9573-42588CBBC681}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,5 +103,6 @@ Global
 		{FE8E5E64-9957-4719-AAD6-1393A4FB245E} = {1C3C02E0-E176-4A32-97A6-B3DFDDC22F0B}
 		{B71D3435-EA79-4306-88B7-F1557ED9177E} = {1C3C02E0-E176-4A32-97A6-B3DFDDC22F0B}
 		{76CEE59A-6899-43E4-89D6-C40BA8619E4A} = {6F8EF28C-5C9F-499F-B6F2-B7DEE2F455E8}
+		{2F640260-105D-4312-9573-42588CBBC681} = {6F8EF28C-5C9F-499F-B6F2-B7DEE2F455E8}
 	EndGlobalSection
 EndGlobal

@@ -129,6 +129,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Content\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +141,10 @@
       <Project>{7c48fffc-18eb-4f04-8f50-351fdf856bf5}</Project>
       <Name>MODEL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Step.Logic.Admin\Step.Logic.Admin.csproj">
+      <Project>{2f640260-105d-4312-9573-42588cbbc681}</Project>
+      <Name>Step.Logic.Admin</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Step.Logic\Step.Logic.csproj">
       <Project>{0bb4c8df-9d28-4353-b998-5b00cf9bf32e}</Project>
       <Name>Step.Logic</Name>
@@ -146,6 +152,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Home\Login.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
