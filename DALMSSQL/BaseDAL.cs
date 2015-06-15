@@ -94,7 +94,7 @@ namespace DALMSSQL
         }
         #endregion
 
-        #region 4.0 批量修改 +int Modify(T model, Expression<Func<T, bool>> whereLambda, params string[] modifiedProNames)
+        #region 4.1 批量修改 +int Modify(T model, Expression<Func<T, bool>> whereLambda, params string[] modifiedProNames)
         /// <summary>
         /// 4.0 批量修改
         /// </summary>
@@ -146,6 +146,15 @@ namespace DALMSSQL
         }
         #endregion
 
+        #region 4.2 修改 +int Modify(T model)
+        public int Modify(T model)
+        {
+            DbEntityEntry entry = db.Entry<T>(model);
+            entry.State = System.Data.EntityState.Modified;
+            return db.SaveChanges();
+        } 
+        #endregion
+
         #region 5.0 根据条件查询 +List<T> GetListBy(Expression<Func<T,bool>> whereLambda)
         /// <summary>
         /// 5.0 根据条件查询 +List<T> GetListBy(Expression<Func<T,bool>> whereLambda)
@@ -172,6 +181,18 @@ namespace DALMSSQL
             //new MODEL.OuOAEntities().Ou_UserInfo.Where(u => listIds.Contains(u.uId));
             return db.Set<T>().Where(whereLambda).OrderBy(orderLambda).ToList();
         }
+        #endregion
+
+        #region 5.2 根据条件 获得实体 +T GetModelBy(Expression<Func<T, bool>> whereLambda)
+        /// <summary>
+        /// 5.2 根据条件 获得实体
+        /// </summary>
+        /// <param name="whereLambda"></param>
+        /// <returns></returns>
+        public T GetModelBy(Expression<Func<T, bool>> whereLambda)
+        {
+            return db.Set<T>().Where(whereLambda).FirstOrDefault();
+        } 
         #endregion
 
         #region 6.0 分页查询 + List<T> GetPagedList<TKey>

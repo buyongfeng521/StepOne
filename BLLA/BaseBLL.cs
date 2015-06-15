@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Reflection;
+using IDAL;
 
 namespace BLLA
 {
@@ -40,6 +41,7 @@ namespace BLLA
             {
                 if (iDbSession == null)
                 {
+                    /*
                     //1.读取配置文件
                     string strFactoryDLL = Common.ConfigurationHelper.AppSetting("DBSessionFatoryDLL");
                     string strFactoryType = Common.ConfigurationHelper.AppSetting("DBSessionFatory");
@@ -51,7 +53,12 @@ namespace BLLA
 
 
                     //3.通过 工厂 创建 DBSession对象
+                    iDbSession = sessionFactory.GetDBSession();*/
+
+                    //1.0 
+                    IDBSessionFactory sessionFactory = DI.SpringHelper.GetObject<IDAL.IDBSessionFactory>("DBSessFactory");
                     iDbSession = sessionFactory.GetDBSession();
+
                 }
                 return iDbSession;
             }
@@ -108,7 +115,7 @@ namespace BLLA
         }
         #endregion
 
-        #region  4.0 批量修改 +int Modify(T model, Expression<Func<T, bool>> whereLambda, params string[] modifiedProNames)
+        #region  4.1 批量修改 +int Modify(T model, Expression<Func<T, bool>> whereLambda, params string[] modifiedProNames)
         /// <summary>
         ///  4.0 批量修改 +int Modify(T model, Expression<Func<T, bool>> whereLambda, params string[] modifiedProNames)
         /// </summary>
@@ -120,6 +127,18 @@ namespace BLLA
         {
             return idal.ModifyBy(model, whereLambda, modifiedProNames);
         }
+        #endregion
+
+        #region 4.2 修改 +int Modify(T model)
+        /// <summary>
+        /// 4.2 修改
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public int Modify(T model)
+        {
+            return idal.Modify(model);
+        } 
         #endregion
 
         #region 5.0 根据条件查询 +List<T> GetListBy(Expression<Func<T,bool>> whereLambda)
@@ -145,6 +164,18 @@ namespace BLLA
         public List<T> GetListBy<TKey>(Expression<Func<T, bool>> whereLambda, Expression<Func<T, TKey>> orderLambda)
         {
             return idal.GetListBy(whereLambda, orderLambda);
+        }
+        #endregion
+
+        #region 5.2 根据条件 获得实体 +T GetModelBy(Expression<Func<T, bool>> whereLambda)
+        /// <summary>
+        /// 5.2 根据条件 获得实体
+        /// </summary>
+        /// <param name="whereLambda"></param>
+        /// <returns></returns>
+        public T GetModelBy(Expression<Func<T, bool>> whereLambda)
+        {
+            return idal.GetModelBy(whereLambda);
         }
         #endregion
 

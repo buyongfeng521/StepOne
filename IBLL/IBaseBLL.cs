@@ -64,6 +64,15 @@ namespace IBLL
         int ModifyBy(T model, Expression<Func<T, bool>> whereLambda, params string[] modifiedProNames);
         #endregion
 
+        #region 4.2 修改 +int Modify(T model)
+        /// <summary>
+        /// 4.2 修改
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        int Modify(T model); 
+        #endregion
+
         #region 5.0 根据条件查询 +List<T> GetListBy(Expression<Func<T,bool>> whereLambda)
         /// <summary>
         /// 5.0 根据条件查询 +List<T> GetListBy(Expression<Func<T,bool>> whereLambda)
@@ -82,6 +91,15 @@ namespace IBLL
         /// <param name="orderLambda">排序条件 lambda表达式</param>
         /// <returns></returns>
         List<T> GetListBy<TKey>(Expression<Func<T, bool>> whereLambda, Expression<Func<T, TKey>> orderLambda);
+        #endregion
+
+        #region 5.2 根据条件 获得实体  +T GetModelBy(Expression<Func<T, bool>> whereLambda);
+        /// <summary>
+        /// 5.2 根据条件 获得实体
+        /// </summary>
+        /// <param name="whereLambda"></param>
+        /// <returns></returns>
+        T GetModelBy(Expression<Func<T, bool>> whereLambda);
         #endregion
 
         #region 6.0 分页查询 + List<T> GetPagedList<TKey>
