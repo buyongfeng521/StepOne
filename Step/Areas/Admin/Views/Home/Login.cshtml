@@ -11,7 +11,12 @@
 </head>
 <body>
     <div>
-        @ViewBag.IsSuc
+        @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+        {
+            <input type="text" value="" name="UName" />
+            <input type="text" value="" name="UPassword" />
+            <input type="submit" name="btn" value="提交"/>
+        }
     </div>
 </body>
 </html>
