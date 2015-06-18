@@ -29,19 +29,41 @@ namespace Step.Logic.Admin
             //    OperateContext.BLLSession.ISys_UserBLL.Modify(user);
             //}
             //ViewBag.IsSuc = "成功";
+            
             return View();
         }
 
         [HttpPost]
         public ActionResult Login(Sys_User user)
         {
-            string strPassword = Common.EncryptHelper.GetMD5(user.UPassword);
-            if (OperateContext.BLLSession.ISys_UserBLL.GetModelBy(u => u.UName == user.UName && u.UPassword == strPassword) != null)
+            if (!string.IsNullOrEmpty(user.UPassword))
             {
-                //Redirect("~/home/index/");
+                string strPassword = Common.EncryptHelper.GetMD5(user.UPassword);
+                if (OperateContext.BLLSession.ISys_UserBLL.GetModelBy(u => u.UName == user.UName && u.UPassword == strPassword) != null)
+                {
+                    //Response.Redirect("/Home/Index");
+                    Response.Redirect("Index");
+                }
             }
             return View();    
         }
+
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult Tables()
+        {
+            return View();
+        }
+
+        public ActionResult FormElement()
+        {
+            return View();
+        }
+
 
     }
 }
