@@ -16,12 +16,6 @@
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
 
-    <!--[if IE 7]>
-      <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
-    <![endif]-->
-    <!-- page specific plugin styles -->
-    <!-- fonts -->
-
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
 
     <!-- ace styles -->
@@ -29,27 +23,58 @@
     <link rel="stylesheet" href="/assets/css/ace.min.css" />
     <link rel="stylesheet" href="/assets/css/ace-rtl.min.css" />
 
-    <!--[if lte IE 8]>
-      <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
-    <![endif]-->
-    <!-- inline styles related to this page -->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.js"></script>
-    <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+
+
+    <!--script-->
+    <script src="/assets/js/jquery-2.0.3.min.js"></script>
+    <script src="~/assets/js/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='/assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+    </script>
+
+
+    <script type="text/javascript">
+        if ("ontouchend" in document) document.write("<script src='/assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+    </script>
+
+
+    <script type="text/javascript">
+        function afterSubmit(data) {
+            if (data == "ok") {
+                window.location.href = "/Admin/Home/Index";
+            }
+            else {
+                Messenger().post({
+                    message: data,
+                    type: 'error',
+                    showCloseButton:true
+                });
+                $("#UName").val("");
+                $("#UPassword").val("");
+                $("#UName").focus();
+            }
+        };
+    </script>
+
+
+    <!--Messenger-->
+    <link href="~/Content/messenger/messenger.css" rel="stylesheet" />
+    <link href="~/Content/messenger/messenger-theme-future.css" rel="stylesheet" />
+    <script src="~/Scripts/messenger/messenger.min.js"></script>
+    <script src="~/Scripts/messenger/messenger-theme-future.js"></script>
+    <script>
+       $(function () {
+           Messenger.options = {
+               extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-right',
+               theme: 'future'
+           }
+       })
+    </script>
 
 </head>
-@*<body>
-    <div>
-        @using (Html.BeginForm("Login", "Home", FormMethod.Post))
-        {
-            <input type="text" value="" name="UName" />
-            <input type="text" value="" name="UPassword" />
-            <input type="submit" name="btn" value="提交"/>
-        }
-    </div>
-</body>*@
 
 
 <body class="login-layout">
@@ -80,20 +105,20 @@
 
                                         <div class="space-6"></div>
 
-                                    @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+                                    @using (Ajax.BeginForm("Login", "Home", FormMethod.Post, new AjaxOptions() { OnSuccess="afterSubmit"}))
                                     {
                                         <form>
                                             <fieldset>
                                                 <label class="block clearfix">
                                                     <span class="block input-icon input-icon-right">
-                                                        <input type="text" class="form-control" value="" name="UName" placeholder="用户名" required/>
+                                                        <input type="text" class="form-control" value="" name="UName" id="UName" placeholder="用户名" required/>
                                                         <i class="icon-user"></i>
                                                     </span>
                                                 </label>
 
                                                 <label class="block clearfix">
                                                     <span class="block input-icon input-icon-right">
-                                                        <input type="password" class="form-control" value="" name="UPassword" placeholder="密码" required/>
+                                                        <input type="password" class="form-control" value="" name="UPassword" id="UPassword" placeholder="密码" required/>
                                                         <i class="icon-lock"></i>
                                                     </span>
                                                 </label>
@@ -149,31 +174,11 @@
     <!-- basic scripts -->
     <!--[if !IE]> -->
 
-    <script src="/assets/js/jquery-2.0.3.min.js"></script>
-
-    <!-- <![endif]-->
-    <!--[if IE]>
-    <script src="script src='/assets/js/jquery-2.0.3.min.js"></script>
-    <![endif]-->
-    <!--[if !IE]> -->
-
-    <script type="text/javascript">
-			window.jQuery || document.write("<script src='/assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
-    </script>
-
-    <!-- <![endif]-->
-    <!--[if IE]>
-    <script type="text/javascript">
-     window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
-    </script>
-    <![endif]-->
-
-    <script type="text/javascript">
-			if("ontouchend" in document) document.write("<script src='/assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
-    </script>
 
     <div style="display:none">
-    <script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+        <script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script>
+    </div>
+
 </body>
 
 </html>
