@@ -179,6 +179,18 @@ namespace BLLA
         }
         #endregion
 
+        #region 5.3 根据条件获得结果集数量 +int GetListCount(Expression<Func<T, bool>> whereLambda)
+        /// <summary>
+        /// 5.3 根据条件获得结果集数量
+        /// </summary>
+        /// <param name="whereLambda"></param>
+        /// <returns></returns>
+        public int GetListCount(Expression<Func<T, bool>> whereLambda)
+        {
+            return idal.GetListCount(whereLambda);
+        }
+        #endregion
+
         #region 6.0 分页查询 + List<T> GetPagedList<TKey>
         /// <summary>
         /// 6.0 分页查询 + List<T> GetPagedList<TKey>

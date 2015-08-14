@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using Webdiyer.WebControls.Mvc;
 
 namespace Step.Logic.Admin
 {
@@ -73,6 +74,26 @@ namespace Step.Logic.Admin
         public ActionResult Tables()
         {
             return View();
+        }
+
+        public ActionResult UserList(int? id = 1,string UserName = "")
+        {
+            //1.0 初始化
+            int totalCount = Step.Helper.OperateContext.BLLSession.ISys_UserBLL.GetListCount(u => u.UName.Contains(UserName));
+            int pageIndex = id ?? 1;
+            int pageSize = 10;
+            //2.0 组装PageList集合以供View使用
+            PagedList<Sys_User> listPage = Step.Helper.OperateContext.BLLSession.ISys_UserBLL.GetPagedList(pageIndex, pageSize, u => u.UName.Contains(UserName), u => u.UID).ToPagedList<Sys_User>(pageIndex,pageSize); ;//DAL.Info.GetInfos(title, pageSize, (pageIndex - 1) * 2, out totalCount).AsQueryable().ToPagedList(pageIndex, pageSize);
+            listPage.TotalItemCount = totalCount;
+            listPage.CurrentPageIndex = (int)(id ?? 1);
+            //3.0 返回
+            ViewBag.UserList = listPage;
+            return View();
+        }
+
+        public ActionResult BetterAsper
+        { 
+            
         }
 
         public ActionResult FormElement()
