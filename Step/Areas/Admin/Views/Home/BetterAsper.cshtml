@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "BetterAsper";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml.cshtml";
+    int indexCount = 1;
+}
+
+<h2>BetterAsper</h2>
+
+<table class="table  table-hover table-bordered  table-condensed">
+     <thead>
+         <tr>
+             <th>序号</th>
+             <th>用户名</th>
+             <th>密码</th>
+         </tr>
+     </thead>
+     <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@indexCount</td>
+                <td>@item.UName</td>
+                <td>@item.UPassword</td>
+            </tr>
+            
+            indexCount++;
+        }
+    </tbody>
+</table>
+
+@Html.Partial("PartialPager", ViewData["PageModel"])

@@ -79,7 +79,7 @@ namespace Step.Logic.Admin
         public ActionResult UserList(int? id = 1,string UserName = "")
         {
             //1.0 初始化
-            int totalCount = Step.Helper.OperateContext.BLLSession.ISys_UserBLL.GetListCount(u => u.UName.Contains(UserName));
+            int totalCount = OperateContext.BLLSession.ISys_UserBLL.GetListCount(u => u.UName.Contains(UserName));
             int pageIndex = id ?? 1;
             int pageSize = 10;
             //2.0 组装PageList集合以供View使用
@@ -91,9 +91,14 @@ namespace Step.Logic.Admin
             return View();
         }
 
-        public ActionResult BetterAsper
-        { 
-            
+        public ActionResult BetterAsper(int? index = 1)
+        {
+            BasePageModel pageModel = new BasePageModel() { ActionName = "BetterAsper", CurrentIndex = index ?? 1, TotalCount = OperateContext.BLLSession.ISys_UserBLL.GetListCount(u => u.UID > 0) };
+            List<Sys_User> pageList = OperateContext.BLLSession.ISys_UserBLL.GetPagedList(pageModel.CurrentIndex, pageModel.PageSize, u => u.UID > 0, u => u.UID);
+
+            ViewBag.PageModel = pageModel;
+
+            return View(pageList);
         }
 
         public ActionResult FormElement()

@@ -225,6 +225,8 @@
     <Content Include="Content\messenger\messenger.css" />
     <Content Include="Global.asax" />
     <Content Include="Areas\Admin\Views\Home\UserList.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\BetterAsper.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\PartialPager.cshtml" />
     <None Include="Scripts\jquery-1.8.0.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.0.js" />
     <Content Include="Scripts\jquery-1.8.0.min.js" />
